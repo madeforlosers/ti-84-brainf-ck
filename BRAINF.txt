@@ -1,0 +1,69 @@
+Disp "BRAINF***"
+Disp "INTERPRETER"
+Disp ""
+Disp "TYPE QUOTE"
+Disp "BEORE CODE"
+"º..³.≤≥...ֿ¹².. πeeuvw⸤iθn..pn... !.≠./.'()*+,-./0123456789:.<=>?.ABCDEFGHIJKLMNOPQRSTUVWXYZ[.]^..abcdefghijklmnopqrstuvwxyz{.}."→Str2
+Prompt Str1
+50→Dim(L₁
+Fill(0,L₁
+50→Dim(L₂
+Fill(0,L₂
+5→P
+0→L
+0→D
+0→X
+1→Y
+0→S
+ClrHome
+getTime→L₅
+(L₅(1)*60*60)+(L₅(2)*60)+L₅(3)→B
+For(I,1,length(Str1
+sub(Str1,I,1→Str3
+If not(D
+Then
+If Str3=".
+Then
+If L₁(P
+Output(int(X/16)+1,remainder(X,16)+1,sub(Str2,L₁(P),1
+X+1→X
+End
+L₁(P)+((Str3="+")-(Str3="-"→L₁(P
+remainder(abs(254(L₁(P)<0)-L₁(P)),256→L₁(P
+P+((Str3=">")-(Str3="<"→P
+End
+If Str3="[
+Then
+If L₁(P
+Then
+L+1→L
+I→L₂(L
+Else
+S+1→S
+1→D
+End
+End
+If Str3="]
+Then
+S-(S>1→S
+If D(S=1
+Then
+0→D
+0→S
+Else
+If L₁(P
+Then
+L₂(L→I
+Else
+L-1→L
+End
+End
+End
+End
+getTime→L₆
+(L₆(1)*60*60)+(L₆(2)*60)+L₆(3)→E
+Output(7,1,"RUN TIME (SEC):"
+Output(8,1,"             "
+"THAT IS 13 SPACES
+Output(8,1,E-B
+DelVar L₆DelVar L₅DelVar L₁DelVar L₂DelVar Str2DelVar Str3DelVar Str1Pause
