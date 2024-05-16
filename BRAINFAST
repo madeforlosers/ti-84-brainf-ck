@@ -1,0 +1,87 @@
+:Disp "BRAINF***
+
+:Disp "INTERPRET
+ER
+:Disp "
+:Disp "TYPE QUOT
+E
+:Disp "BEFORE CO
+DE
+:"..............
+................
+. !.....'()*+,-.
+/0123456789:.<=>
+OPQRSTUVWXYZ[.]^
+..abcdefghijklmn
+opqrstuvwxyz{.}.
+→Str2
+:Prompt Str1
+:100→dim(L₁
+:Fill(0,L₁
+:100→dim(L₂
+:5→ℕ
+:5→PV
+:0→FV
+:0→PMT
+:-1→Xmin
+:0→Xmax
+:ClrHome
+:getTime→L5
+:L5(1)3600+L5(2)
+60+L5(3→B
+:For(𝑛,1,length(
+Str1
+:inString("+-.><
+[]",sub(Str1,𝑛,1
+→I%
+:If not(Xmax
+:Then
+:L₁(ℕ→A
+:If I%=3
+:Then
+:Output(int(PMT/
+16)+1,remainder(
+PMT,16)+1,sub(St
+r2,(A+(A=0)),1
+:PMT+1→PMT
+:End
+:A+(I%=1)-(I%=2→
+L₁(ℕ
+:remainder(abs(2
+54(L₁(ℕ)<0)-L₁(ℕ
+)),256→L₁(ℕ
+:ℕ+(I%=4)-(I%=5→
+ℕ
+:End
+:If I%=6
+:Then
+:PV+(A≠0→PV
+:Xmax+not(A→Xmax
+
+:If A
+:𝑛→L₂(PV
+:End
+:If I%=7
+:Then
+:(Xmax-(Xmax>1))
+(Xmax≠1→Xmax
+:If not(A
+:PV-1→PV
+:If A
+:L₂(PV→𝑛
+:End
+:End
+:getTime→L6
+:L6(1)3600+L6(2)
+60+L6(3)-B→B
+:Output(7,1,"RUN
+ TIME (SEC):
+:Output(8,1,"  
+          "
+:Output(8,1,B
+:DelVar Str2DelV
+ar Str3DelVar St
+r1Pause
+
+
+
