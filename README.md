@@ -5,3 +5,5 @@ it is, like, extremely slow. On a TI-84 Plus CE, the Hello World program showcas
 
 
 it does around ~14 instructions per second (very rough calculation)
+
+will prompt you to enter the program as `Str1`
